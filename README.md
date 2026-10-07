@@ -97,3 +97,7 @@ TechSolutions Inc. is fictional. Closed-deal win rate excludes open opportunitie
 - [HR-Analysis-Dashboard](https://github.com/Scarface96/HR-Analysis-Dashboard)
 - [Global-CO2-Emissions-Dashboard](https://github.com/Scarface96/Global-CO2-Emissions-Dashboard)
 - [Toy-Store-KPI-Report](https://github.com/Scarface96/Toy-Store-KPI-Report)
+
+## About This Project
+
+A business intelligence project designed to help sales leaders understand pipeline health, team performance and regional results. It demonstrates Excel-based CRM analytics, PivotTables, interactive filtering and the ability to translate sales data into management-ready insights.
