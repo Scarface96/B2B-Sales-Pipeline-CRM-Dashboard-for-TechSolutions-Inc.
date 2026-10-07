@@ -9,6 +9,14 @@ An Excel dashboard that tracks the B2B sales pipeline of a fictional computer ha
 
 Sales managers need to see at a glance how their teams are doing each quarter. This project takes raw CRM data — 8,800 sales opportunities handled by 35 sales agents — and turns it into an interactive dashboard for tracking quarter-by-quarter performance.
 
+## 📈 Results at a Glance
+
+Charts built with Python (pandas + matplotlib) from the data files in this repo.
+
+<p align="center"><img src="docs/images/quarterly_won.png" alt="Won deal value by quarter" width="85%"></p>
+
+<p align="center"><img src="docs/images/top_agents.png" alt="Top 8 sales agents by won deal value" width="85%"></p>
+
 ## 🗂️ Dataset
 
 | File | Rows | Description |
