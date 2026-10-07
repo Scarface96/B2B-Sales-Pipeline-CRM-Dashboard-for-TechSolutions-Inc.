@@ -1,9 +1,22 @@
 # 💼 B2B Sales Pipeline CRM Dashboard — TechSolutions Inc.
 
+**Sales & CRM Analytics | Excel • PivotTables • Pipeline Performance • Interactive Reporting**
+
 An Excel dashboard that tracks the B2B sales pipeline of a fictional computer hardware company, **TechSolutions Inc.**, showing quarterly sales performance by deal stage, sales agent, manager and region.
 
 ![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white)
 ![Data Analysis](https://img.shields.io/badge/Data_Analysis-4285F4?style=flat-square)
+
+## Business value
+
+Consolidate CRM opportunities into quarterly views for sales managers. PivotTables, charts and slicers make deal stages, agent performance and regional differences easier to explore.
+
+### Questions this project addresses
+
+- How does the mix of won, lost and open opportunities vary by quarter?
+- Which agents and regions contribute the most won deal value?
+- How does performance change when filtering by manager?
+
 
 ## 📋 Overview
 
@@ -73,3 +86,14 @@ Data preparation · PivotTables & PivotCharts · date grouping by quarter · sli
 ---
 
 👤 **Tony Mulunda** — [GitHub @Scarface96](https://github.com/Scarface96)
+
+## Interpretation & limitations
+
+TechSolutions Inc. is fictional. Closed-deal win rate excludes open opportunities. Won deal value is a historical sales measure; the workbook should not be presented as a validated revenue forecast.
+
+## Explore the analytics portfolio
+
+- [sql_retail_sales_p1](https://github.com/Scarface96/sql_retail_sales_p1)
+- [HR-Analysis-Dashboard](https://github.com/Scarface96/HR-Analysis-Dashboard)
+- [Global-CO2-Emissions-Dashboard](https://github.com/Scarface96/Global-CO2-Emissions-Dashboard)
+- [Toy-Store-KPI-Report](https://github.com/Scarface96/Toy-Store-KPI-Report)
