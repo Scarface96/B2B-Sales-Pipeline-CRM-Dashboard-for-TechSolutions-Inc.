@@ -26,6 +26,12 @@ The Excel dashboard is still here. The same CSVs now also feed a Python analysis
 - **Weighted pipeline forecast:** list price × typical price realisation × each agent's product win rate (shrunk toward the product average)
 - **Interactive leaderboard:** filter by manager or region, search agents, sort any column
 
+## 📊 Tableau & Power BI
+
+A ready-to-build kit for **Power BI and Tableau** lives in [`bi/`](bi/): model-ready data in a star schema, ready-to-paste DAX measures and Tableau calculated fields, a branded theme, a page-by-page layout, and the exact numbers the finished dashboard should show. Every table is exported from the same cleaning code as the live report, and a test keeps them in step.
+
+**[Open the build guide →](bi/README.md)**
+
 ## Business value
 
 Consolidate CRM opportunities into quarterly views for sales managers. PivotTables, charts and slicers make deal stages, agent performance and regional differences easier to explore.
