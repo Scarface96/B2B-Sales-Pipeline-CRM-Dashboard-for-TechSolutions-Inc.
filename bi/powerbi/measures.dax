@@ -1,0 +1,55 @@
+// Power BI measures for B2B Sales Pipeline CRM Dashboard
+// Create a measure table first (Home > Enter data > name it _Measures > Load),
+// then for each block: select _Measures > New measure > paste the block > set the format shown.
+
+// Format: #,0
+Opportunities =
+COUNTROWS ( fact_opportunity )
+
+// Format: #,0
+Won Deals =
+SUM ( fact_opportunity[won] )
+
+// Format: #,0
+Closed Deals =
+SUM ( fact_opportunity[closed] )
+
+// Format: 0.0%
+Win Rate =
+DIVIDE ( [Won Deals], [Closed Deals] )
+
+// Format: $#,0
+Won Revenue =
+CALCULATE ( SUM ( fact_opportunity[close_value] ), fact_opportunity[won] = 1 )
+
+// Format: $#,0
+Avg Won Deal =
+DIVIDE ( [Won Revenue], [Won Deals] )
+
+// Format: 0
+Median Sales Cycle (days) =
+CALCULATE ( MEDIAN ( fact_opportunity[cycle_days] ), fact_opportunity[won] = 1 )
+
+// Format: 0.0%
+Team Win Rate =
+CALCULATE ( [Win Rate], ALL ( dim_agent ) )
+
+// Format: +0.0%;-0.0%;0.0%
+Win Rate vs Team =
+[Win Rate] - [Team Win Rate]
+
+// Format: #,0
+Engaging Deals =
+CALCULATE ( COUNTROWS ( fact_opportunity ), fact_opportunity[deal_stage] = "Engaging" )
+
+// Format: $#,0
+Weighted Pipeline =
+SUM ( fact_opportunity[expected_value] )
+
+// Format: #,0
+Stale Deals =
+CALCULATE ( COUNTROWS ( fact_opportunity ), fact_opportunity[stale] = 1 )
+
+// Format: $#,0
+Healthy Pipeline =
+CALCULATE ( [Weighted Pipeline], fact_opportunity[stale] = 0 )
